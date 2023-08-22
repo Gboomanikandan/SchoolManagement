@@ -40,6 +40,7 @@ namespace Library
             foreach(DataRow dr in dt.Rows) 
             {
                 isValid = "true";
+
             }
 
             if(isValid == "false")

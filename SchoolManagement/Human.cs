@@ -12,5 +12,11 @@ namespace SchoolManagement
         public string EmailID { get; set; }
         public string contactNo { get; set; }
         public string Address { get; set; }
+
+        public string className { get; set; }
+
+        public string section { get; set; }
+
+        public string subjectName { get; set; }
     }
 }

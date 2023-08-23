@@ -67,17 +67,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddClass.aspx" />
     <Content Include="AddStaff.aspx" />
+    <Content Include="AddSubject.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddStaff.aspx.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddStaff.aspx.designer.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.aspx.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSubject.aspx.designer.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Human.cs" />
     <Compile Include="LoginPage.aspx.cs">

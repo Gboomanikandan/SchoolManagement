@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 
-namespace Library
+namespace SchoolManagement
 {
     public partial class LoginPage : System.Web.UI.Page
     {
@@ -28,7 +28,7 @@ namespace Library
             string username = txt_userName.Text;
             string password = txt_password.Text;
 
-            string connectionstr = @"Data Source=DESKTOP-9RNOFMR\SQLEXPRESS;Initial Catalog=schoolmanagement;Integrated Security=True";
+            string connectionstr = @"Data Source=10.111.36.99;Initial Catalog=FSDCDev;User ID=efosappstrgs;Password=Checkfix@#1";
 
             SqlConnection abc = new SqlConnection(connectionstr);
 

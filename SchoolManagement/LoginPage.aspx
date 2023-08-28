@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="Library.LoginPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="SchoolManagement.LoginPage" %>
 
 <!DOCTYPE html>
 
@@ -28,6 +28,7 @@
                         </div>
                         <br />
                         <asp:Button ID="Button1" runat="server" Text="Sign In" class="btn btn-success" OnClick="Button1_Click" />
+
                     </div>
 
                     <br />

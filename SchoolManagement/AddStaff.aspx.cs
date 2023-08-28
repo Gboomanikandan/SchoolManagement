@@ -12,7 +12,12 @@ namespace SchoolManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //string name = .ToString();
 
+            if(Session["Name"] == null)
+            {
+                Response.Redirect("loginpage.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

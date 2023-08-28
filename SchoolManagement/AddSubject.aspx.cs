@@ -20,7 +20,7 @@ namespace SchoolManagement
             Human hm = new Human();
             hm.subjectName = txt_subjectName.Text;
 
-            string connectionstr = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=schoolmanagement;Integrated Security=True";
+            string connectionstr = @"Data Source=DESKTOP-9RNOFMR\SQLEXPRESS;Initial Catalog=schoolmanagement;Integrated Security=True";
 
             SqlConnection abc = new SqlConnection(connectionstr);
 

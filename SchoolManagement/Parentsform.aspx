@@ -17,7 +17,7 @@
                             Parents Form
                         </div>
                         <div class="card-body">
-                            
+
                             <div class="form-group">
                                 <asp:Label ID="Label2" runat="server" Text="FirstName"></asp:Label>
                                 <asp:TextBox ID="txt_fname" runat="server" CssClass="form-control"></asp:TextBox>
@@ -43,6 +43,12 @@
                                 <asp:TextBox ID="txt_address" runat="server" CssClass="form-control"></asp:TextBox>
                                 <br />
                             </div>
+                            <div class="form-group">
+                                <asp:Label ID="Label1" runat="server" Text="Role"></asp:Label>
+
+                                <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server"></asp:DropDownList>
+
+                            </div>
 
 
 
@@ -52,7 +58,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
 
         </div>

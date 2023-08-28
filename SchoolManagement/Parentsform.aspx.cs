@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
-
+using System.Data;
 
 namespace SchoolManagement
 {
@@ -17,7 +17,36 @@ namespace SchoolManagement
                 if (Session["Name"]== null)
             {
                 Response.Redirect("LoginPage.aspx");
-            }    
+            }
+            string connectionstr = @"Data Source=10.111.36.99;Initial Catalog=FSDCDev;User ID=efosappstrgs;Password=Checkfix@#1";
+            SqlConnection def = new SqlConnection(connectionstr);
+            string com = "select * from tbl_rolemaster";
+            SqlDataAdapter adpt = new SqlDataAdapter(com, def);
+            DataTable dt = new DataTable();
+            adpt.Fill(dt);
+            DropDownList1.DataSource = dt;
+            
+            DropDownList1.DataTextField = "RoleName";
+            DropDownList1.DataValueField = "RoleID";
+           
+
+            DropDownList1.DataBind();
+
+            ListItem var = new ListItem();
+            var.Text = "Select";
+            var.Value = "";
+
+            DropDownList1.Items.Insert(0, var);
+
+
+
+
+
+
+
+
+
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
